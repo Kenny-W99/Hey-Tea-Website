@@ -1,0 +1,14 @@
+# Netlify settings for the HEYTEA site: a static Vite build with no backend.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # The project and its MediaPipe copy step need Node 22.12 or later.
+  NODE_VERSION = "22"
+
+# MediaPipe's hand-tracking runtime must be served as WebAssembly.
+[[headers]]
+  for = "/vision/wasm/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
