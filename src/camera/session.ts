@@ -43,6 +43,8 @@ export class CameraSession {
     };
   };
   snapshot = () => this.state;
+  /** The live camera picture, for an on-screen preview while tracking runs. */
+  preview = () => (this.state.status === "ready" ? this.stream : undefined);
   private set(value: CameraState) {
     this.state = value;
     this.listeners.forEach((fn) => fn());

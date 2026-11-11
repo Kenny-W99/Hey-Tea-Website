@@ -73,6 +73,14 @@ it.each(["mash", "scoop", "transfer"] as const)(
   },
 );
 
+it("drops two prepared fruits with two separate sweeps", () => {
+  const ctl = new KitchenMotion("transfer", 2);
+  ctl.sample(hand(), 0);
+  expect(ctl.sample(hand(0.2, 0.51), 70)).toBe(0.5);
+  ctl.sample(hand(0.2, 0.32), 700);
+  expect(ctl.sample(hand(0.2, 0.51), 770)).toBe(0.5);
+});
+
 it.each([-1, 1])(
   "recognizes an off-center loop in direction %i and ignores scrubbing",
   (sign) => {

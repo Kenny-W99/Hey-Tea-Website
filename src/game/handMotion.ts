@@ -32,7 +32,10 @@ export class KitchenMotion {
   private turn = 0;
   private credited = 0;
 
-  constructor(private readonly mode: Mechanic) {
+  constructor(
+    private readonly mode: Mechanic,
+    private readonly fruits = 1,
+  ) {
     this.prep = strokeCount(mode) ? new PrepStrokes(mode, 0.13) : null;
   }
 
@@ -139,7 +142,7 @@ export class KitchenMotion {
     // A held gesture or a fast tracking oscillation cannot dispense several portions.
     if (now - this.lastAction < 600) return 0;
     this.lastAction = now;
-    return 1 / actionCount(this.mode);
+    return 1 / actionCount(this.mode, this.fruits);
   }
 
   /**

@@ -10,8 +10,8 @@ import {
 } from "./strokes";
 export const clamp = (n: number, lo = 0, hi = 1) =>
   Math.max(lo, Math.min(hi, n));
-export function buttonIncrement(mode: Mechanic) {
-  return 1 / (actionCount(mode) || 4);
+export function buttonIncrement(mode: Mechanic, fruits = 1) {
+  return 1 / (actionCount(mode, fruits) || 4);
 }
 export function signedArc(
   prev: Point,
@@ -39,7 +39,10 @@ export class FruitController {
   private angle = 0;
   private peak = 0;
   private prep: PrepStrokes | null;
-  constructor(readonly mode: Mechanic) {
+  constructor(
+    readonly mode: Mechanic,
+    private readonly fruits = 1,
+  ) {
     this.prep = strokeCount(mode) ? new PrepStrokes(mode, 0.21) : null;
   }
   cancel() {
@@ -51,7 +54,8 @@ export class FruitController {
   }
   input(action: Input): number {
     const mode = this.mode;
-    if (action.type === "accessible") return buttonIncrement(mode);
+    const portion = buttonIncrement(mode, this.fruits);
+    if (action.type === "accessible") return portion;
     if (action.type === "tick")
       return this.last && mode === "pour"
         ? clamp(action.seconds, 0, 0.12) / pourSeconds
@@ -63,16 +67,16 @@ export class FruitController {
       this.prep?.sample(action.point);
       this.angle = 0;
       this.peak = 0;
-      return mode === "mash" ? buttonIncrement(mode) : 0;
+      return mode === "mash" ? portion : 0;
     }
     if (!this.last || !this.origin) return 0;
     if (action.type === "end") {
       const delivered =
         action.point.y > 0.64 && action.point.y - this.origin.y > 0.12;
       this.cancel();
-      if (mode === "squeeze") return buttonIncrement(mode);
+      if (mode === "squeeze") return portion;
       return (mode === "transfer" || mode === "scoop") && delivered
-        ? buttonIncrement(mode)
+        ? portion
         : 0;
     }
     const previous = this.last;

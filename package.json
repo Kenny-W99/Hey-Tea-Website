@@ -14,9 +14,7 @@
     "postinstall": "node scripts/vision.mjs"
   },
   "dependencies": {
-    "@fontsource/dm-sans": "^5.3.0",
-    "@fontsource/dm-serif-display": "^5.3.0",
-    "@fontsource/kalam": "^5.3.0",
+    "@fontsource/short-stack": "^5.3.0",
     "@mediapipe/tasks-vision": "^0.10.32",
     "gsap": "^3.15.1",
     "pixi.js": "^8.22.0",

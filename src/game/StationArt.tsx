@@ -11,6 +11,7 @@ export function StationArt({
   engaged,
   flow,
   portionAt,
+  prepared = [],
 }: {
   recipe: Recipe;
   step: Step;
@@ -19,6 +20,8 @@ export function StationArt({
   engaged: RefObject<boolean>;
   flow: RefObject<number>;
   portionAt: RefObject<number>;
+  /** For the bowl step: the fruits cut or peeled earlier, added one by one. */
+  prepared?: readonly { fruit: string; peeled: boolean }[];
 }) {
   const el = useRef<HTMLDivElement>(null),
     current = useRef(progress);
@@ -32,16 +35,20 @@ export function StationArt({
   const fruitStages =
     phase === "squeeze" || phase === "scoop" ? [1, 1, 2] : [0, 1, 2];
   const tool = phase === "pour" ? "pitcher" : phase === "stir" ? "mix" : "mash";
-  const transferFruit = {
-    miami: "guava",
-    hawaii: "pineapple",
-    la: "prickly-pear",
-  }[recipe.city];
+  // Each fruit as it was left: peeled whole, the guava pieces, or the
+  // opened halves the cutting board finished on.
+  const preparedUrls = prepared.map(
+    (f) =>
+      "/art/fruit/" +
+      f.fruit +
+      (f.peeled || f.fruit === "guava" ? "-2" : "-1") +
+      ".webp",
+  );
   const urls =
     phase === "scoop"
       ? ["/art/fruit/scoop-scene.webp"]
       : phase === "transfer"
-        ? ["/art/fruit/" + transferFruit + "-2.webp"]
+        ? preparedUrls
         : fruit
           ? fruitStages.map((n) => base + n + ".webp")
           : [base + tool + ".webp"];
@@ -157,12 +164,19 @@ export function StationArt({
             s.y = cy - h * 0.01 + Math.abs(swing) * h * 0.08;
           }
           if (phase === "transfer") {
+            // The newest added fruit falls into the bowl, then the next one
+            // waits above it. Fruits already in the bowl are hidden.
+            const n = sprites.length,
+              added = Math.min(n, Math.floor(p * n + 1e-6));
             const drop = Math.min(1, (performance.now() - impactAt) / 650);
-            const falling = drop < 1;
+            const falling = drop < 1 && added > 0 && i === added - 1;
+            const waiting = i === added && added < n;
             s.alpha = falling
               ? 1 - Math.max(0, (drop - 0.8) / 0.2)
-              : p < 1
-                ? 1
+              : waiting
+                ? added > 0 && drop < 1
+                  ? Math.max(0, (drop - 0.55) / 0.45)
+                  : 1
                 : 0;
             s.scale.set(scale * (falling ? 0.35 - drop * 0.13 : 0.35));
             s.position.set(
@@ -291,7 +305,16 @@ export function StationArt({
         <img
           draggable={false}
           className="art-fallback"
-          src={urls[Math.min(urls.length - 1, Math.floor(progress * 2.999))]}
+          src={
+            urls[
+              Math.min(
+                urls.length - 1,
+                phase === "transfer"
+                  ? Math.floor(progress * urls.length + 1e-6)
+                  : Math.floor(progress * 2.999),
+              )
+            ]
+          }
           alt=""
         />
       )}

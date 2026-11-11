@@ -117,15 +117,15 @@ export function composePostcard(
   ctx.lineWidth = 2;
   ctx.strokeRect(pad, pad, photoW, photoH);
   ctx.fillStyle = "#2f4a35";
-  ctx.font = '34px "Kalam", cursive';
+  ctx.font = '30px "Short Stack", cursive';
   ctx.textBaseline = "alphabetic";
   ctx.fillText("Greetings from " + recipe.place + "!", pad + 4, H - 52);
   ctx.fillStyle = "#6c7466";
-  ctx.font = '600 17px "DM Sans", sans-serif';
+  ctx.font = '16px "Short Stack", cursive';
   ctx.fillText(stop + " · " + recipe.name, pad + 6, H - 22);
   ctx.textAlign = "right";
   ctx.fillStyle = "#2f4a35";
-  ctx.font = '600 16px "DM Sans", sans-serif';
+  ctx.font = '15px "Short Stack", cursive';
   ctx.fillText("HEYTEA", W - pad - 4, H - 22);
   try {
     return out.toDataURL("image/jpeg", 0.9);

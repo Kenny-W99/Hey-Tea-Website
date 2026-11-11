@@ -10,6 +10,7 @@ export function useStationInput(
   mode: Mechanic,
   advance: (n: number) => void,
   enabled: boolean,
+  fruits = 1,
 ) {
   const pointer = useRef<Point>({ x: 0.5, y: 0.5 }),
     engaged = useRef(false),
@@ -18,8 +19,8 @@ export function useStationInput(
   useEffect(() => {
     const node = el.current;
     if (!node || !enabled) return;
-    const controller = new FruitController(mode);
-    const motion = new KitchenMotion(mode);
+    const controller = new FruitController(mode, fruits);
+    const motion = new KitchenMotion(mode, fruits);
     let pointerId: number | null = null,
       frame = 0,
       time = performance.now();
@@ -100,6 +101,6 @@ export function useStationInput(
       window.removeEventListener("blur", cancel);
       document.removeEventListener("visibilitychange", cancel);
     };
-  }, [el, mode, advance, enabled]);
+  }, [el, mode, advance, enabled, fruits]);
   return { pointer, engaged, tracked, flow };
 }

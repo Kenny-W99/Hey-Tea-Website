@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import type { Dispatch } from "react";
-import { recipes } from "../game/catalog";
+import { preparedFruits, recipes } from "../game/catalog";
 import { buttonIncrement } from "../game/progress";
 import type { Run, Action } from "../game/run";
 import { useStationInput } from "../game/useStationInput";
@@ -14,7 +14,7 @@ const cameraCue = {
   peel: "Move your hand down slowly. The helper peels the skin as you pull.",
   arc: "Move your hand down slowly. The helper unwraps the peel as you pull.",
   scoop: "Sweep your hand down once to scoop the pulp into the bowl.",
-  transfer: "Sweep your hand down once to drop the fruit into the bowl.",
+  transfer: "Sweep your hand down once for each fruit to drop it into the bowl.",
   squeeze:
     "Squeeze briefly, then open your hand. Do it twice, or press down and lift.",
   mash: "Press down three times. Lift your hand between presses.",
@@ -37,14 +37,18 @@ export function Station({
     [dispatch],
   );
   const portionAt = useRef(-Infinity);
-  const count = actionCount(step.mode);
+  // The bowl step adds every fruit cut or peeled earlier, one at a time.
+  const prepared =
+    step.mode === "transfer" ? preparedFruits(r.steps, run.step) : [];
+  const fruits = Math.max(1, prepared.length);
+  const count = actionCount(step.mode, fruits);
   const units = {
     split: "cuts",
     peel: "strips",
     arc: "strips",
     squeeze: "squeezes",
     scoop: "spoonfuls",
-    transfer: "portions",
+    transfer: "fruits",
     mash: "presses",
     stir: "turns",
     pour: "",
@@ -64,6 +68,7 @@ export function Station({
     step.mode,
     advance,
     run.progress < 1,
+    fruits,
   );
   return (
     <main className="workspace scene">
@@ -120,7 +125,7 @@ export function Station({
             data-manual
             onClick={() => {
               portionAt.current = performance.now();
-              advance(buttonIncrement(step.mode));
+              advance(buttonIncrement(step.mode, fruits));
             }}
           >
             {step.button}
@@ -148,6 +153,7 @@ export function Station({
             engaged={engaged}
             flow={flow}
             portionAt={portionAt}
+            prepared={prepared}
           />
         )}
         {cam.status !== "ready" &&

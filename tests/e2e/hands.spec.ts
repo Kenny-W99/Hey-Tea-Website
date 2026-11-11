@@ -1,5 +1,9 @@
 import { test, expect, type Locator } from "@playwright/test";
-import { recipes, type City } from "../../src/game/catalog";
+import {
+  preparedFruits,
+  recipes,
+  type City,
+} from "../../src/game/catalog";
 test.use({
   permissions: ["camera"],
   launchOptions: {
@@ -123,13 +127,22 @@ for (const city of Object.keys(recipes) as City[]) {
             }
             break;
           case "scoop":
-          case "transfer":
-            await at(0.22, 0.62, "point", 400);
-            await at(0.22, 0.31, "point", 400);
+          case "transfer": {
+            // One sweep for each fruit prepared earlier.
+            const drops =
+              step.mode === "transfer"
+                ? preparedFruits(recipe.steps, recipe.steps.indexOf(step))
+                    .length
+                : 1;
+            for (let j = 0; j < drops; j++) {
+              await at(0.22, 0.62, "point", 700);
+              await at(0.22, 0.31, "point", 400);
+            }
             await expect(page.locator(".progress-label")).toContainText(
               "Step complete",
             );
             break;
+          }
           case "squeeze":
             for (let j = 0; j < 2; j++) {
               await at(0.23, 0.43, "fist", 550);
@@ -160,6 +173,9 @@ for (const city of Object.keys(recipes) as City[]) {
         }
       }
       await activate(page.getByRole("button", { name: /Explore Your Summer/ }));
+      // How to play comes first; pinch Start like any other button.
+      await expect(page.locator(".explore-intro video")).toBeVisible();
+      await activate(page.getByRole("button", { name: "Start", exact: true }));
       const world = page.locator(".world");
       async function sweep(
         from: number,

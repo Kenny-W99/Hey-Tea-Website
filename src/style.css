@@ -5,10 +5,8 @@
   --line: #b5c2a9;
   --accent: #28563d;
   --shell: #e7eddc;
-  --display: "DM Serif Display", Georgia, serif;
-  font:
-    16px "DM Sans",
-    sans-serif;
+  --display: "Short Stack", "Comic Sans MS", cursive;
+  font: 16px var(--display);
   color: var(--ink);
   background: var(--shell);
   font-synthesis: none;
@@ -143,7 +141,7 @@ footer {
   top: 6%;
   left: 7%;
   font: italic clamp(28px, 4.4vw, 71px)/0.95 var(--display);
-  letter-spacing: -0.037em;
+  letter-spacing: 0;
   transform: rotate(-8deg);
   color: #723829;
 }
@@ -212,7 +210,7 @@ footer {
 .invite-copy h1,
 h1 {
   font: 400 clamp(40px, 4.65vw, 82px)/0.98 var(--display);
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   margin: 0;
   text-wrap: balance;
 }
@@ -523,24 +521,6 @@ footer b {
   left: 58%;
   object-fit: contain;
 }
-.exploration {
-  display: flex;
-  flex-direction: column;
-}
-.travel-heading,
-.travel-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 20px clamp(18px, 3vw, 52px);
-}
-.travel-heading h1 {
-  font-size: clamp(32px, 4.4vw, 66px);
-}
-.travel-heading .location {
-  margin-bottom: 4px;
-}
 .world {
   position: relative;
   flex: 1;
@@ -550,15 +530,6 @@ footer b {
 }
 .world-poster {
   object-fit: cover;
-}
-
-.travel-controls p {
-  max-width: 52ch;
-  margin: 0;
-}
-
-.travel-controls button {
-  white-space: nowrap;
 }
 .handcursor {
   position: fixed;
@@ -595,9 +566,6 @@ footer b {
   }
   .scene {
     min-height: 65svh;
-  }
-  .travel-controls {
-    align-items: flex-start;
   }
 }
 @media (max-width: 650px) {
@@ -721,6 +689,9 @@ footer b {
   .keepsake-copy h1 {
     font-size: 39px;
   }
+  .globe-copy h1 {
+    font-size: clamp(30px, 9vw, 57px);
+  }
   .instruction,
   .keepsake-copy > p:not(.location) {
     margin: 10px 0 17px;
@@ -730,23 +701,6 @@ footer b {
   }
   .progress-label {
     margin: 8px 0 14px;
-  }
-  .travel-heading,
-  .travel-controls {
-    padding: 16px;
-    gap: 10px;
-  }
-  .travel-heading > p {
-    display: none;
-  }
-  .travel-controls {
-    flex-direction: column;
-  }
-  .world {
-    min-height: 280px;
-  }
-  .travel-controls p {
-    font-size: 15px;
   }
 
   .postcard {
@@ -770,16 +724,18 @@ footer b {
 }
 
 .campaign-script {
-  font-family: Kalam, cursive;
+  font-family: var(--display);
   font-style: normal;
-  letter-spacing: -0.035em;
+  letter-spacing: 0;
   line-height: 1.02;
 }
 @media (max-width: 650px) {
   .campaign-script {
     top: 13%;
-    left: 5%;
-    font-size: clamp(17px, 5vw, 29px);
+    left: 4%;
+    /* The rounded hand lettering is wider, so it stays clear of the cups. */
+    font-size: clamp(14px, 3.8vw, 23px);
+    z-index: 1;
   }
   .hero-cups {
     left: 34%;
@@ -885,7 +841,8 @@ footer b {
     box-shadow: inset 0 0 0 2px var(--accent);
   }
   .select-cup span {
-    font-size: clamp(15px, 4.5vw, 22px);
+    font-size: clamp(14px, 4vw, 20px);
+    white-space: nowrap;
   }
   .select-cup small {
     font-size: 11px;
@@ -960,14 +917,6 @@ footer b {
   top: 36%;
   transform: rotate(8deg);
 }
-.travel-instructions {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.travel-instructions strong {
-  display: block;
-}
 .trail-meter {
   display: flex;
   gap: 4px;
@@ -995,9 +944,6 @@ footer b {
   background: currentColor;
 }
 @media (max-width: 700px) {
-  .travel-controls {
-    align-items: stretch;
-  }
   .traveler {
     height: 30%;
   }
@@ -1022,36 +968,6 @@ footer b {
 .route-plate img {
   object-fit: cover;
   pointer-events: none;
-}
-.route-distance {
-  height: 4px;
-  width: 58px;
-  background: var(--line);
-  flex: none;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.route-distance i {
-  display: block;
-  height: 100%;
-  background: var(--ink);
-}
-.walk-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.walk-buttons button {
-  touch-action: none;
-  user-select: none;
-}
-@media (max-width: 700px) {
-  .walk-buttons button {
-    flex: 1;
-  }
-  .route-distance {
-    width: 35px;
-  }
 }
 .cutting-board canvas,
 .peel-board canvas {
@@ -1324,41 +1240,11 @@ footer b {
   }
 }
 
-.travel-exit {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 9px;
-  flex-shrink: 0;
-}
-.travel-exit span {
-  font-size: 13px;
-}
-.travel-exit .secondary {
-  font-size: 13px;
-  min-height: 44px;
-}
-.hand-steering {
-  width: min(440px, 100%);
-}
-.steering-labels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  font-size: 11px;
-  color: #5c6254;
-}
-.steering-labels strong {
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--ink);
-}
 .steering-meter {
   position: relative;
+  width: clamp(90px, 12vw, 150px);
   height: 12px;
-  margin: 9px 5px;
+  margin: 0 2px;
   background: #d6ddce;
   border-radius: 10px;
 }
@@ -1388,11 +1274,6 @@ footer b {
 .hand-steering[data-cue="calibrate"] .steering-meter i {
   background: #989e86;
 }
-.hand-steering p {
-  font-size: 12px;
-  line-height: 1.4;
-}
-.recenter-hands,
 .route-postcard {
   border: 0;
   color: var(--ink);
@@ -1441,7 +1322,7 @@ footer b {
   padding: 32px;
 }
 .route-finish-copy h2 {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--display);
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 400;
   line-height: 1.04;
@@ -1570,9 +1451,7 @@ footer b {
   border-radius: 50% 45% 50% 40% / 45% 50% 40% 50%;
   background: #fffae9;
   color: #35462a;
-  font:
-    18px "Kalam",
-    cursive;
+  font: 18px var(--display);
   white-space: nowrap;
   box-shadow: 0 3px 12px #24372618;
   animation: arrival-cheers var(--arrival-duration) ease-out both;
@@ -1768,31 +1647,6 @@ footer b {
   }
 }
 @media (max-width: 700px) {
-  .travel-heading {
-    align-items: flex-start;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .travel-exit {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .travel-controls {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .travel-instructions {
-    width: 100%;
-  }
-  .hand-steering {
-    flex: 1;
-    min-width: 0;
-  }
-  .walk-buttons {
-    width: 100%;
-  }
   .route-finish[open] {
     grid-template-columns: 1fr;
   }
@@ -1809,30 +1663,431 @@ footer b {
 }
 
 /* Traveler actions: buttons, and one-hand signs while stopped. */
-.travel-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  justify-content: center;
+@media (max-width: 360px) {
+  /* Keep the wider hand lettering on one line in the entry buttons. */
+  .invite-actions .primary,
+  .invite-actions .secondary {
+    padding-inline: 12px;
+    font-size: 14px;
+  }
 }
-.travel-controls .action-chip {
-  min-height: 44px;
-  padding: 8px 14px;
-  gap: 6px;
-  font-size: 14px;
+
+/* City walk: the scene fills the screen and the controls float on it. */
+.screen:has(> .exploration) {
+  width: 100%;
+  padding: 0 clamp(8px, 1.2vw, 18px);
+  min-height: 0;
+}
+.app:has(.exploration) {
+  height: 100svh;
+}
+.app:has(.exploration) footer {
+  min-height: 40px;
+}
+.exploration {
+  min-height: 0;
+}
+.exploration .world {
+  position: absolute;
+  inset: 0;
+  min-height: 0;
+}
+.travel-hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+.travel-hud > * {
+  position: absolute;
+  pointer-events: auto;
+}
+.travel-place,
+.travel-exit,
+.travel-steer > div {
+  border-radius: 999px;
+  background: #fffaf1d9;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 14px #1d2c2222;
+}
+.travel-place {
+  top: 14px;
+  left: 14px;
+  max-width: calc(100% - 330px);
+  padding: 7px 18px 9px;
+  border-radius: 18px;
+}
+.travel-place .location {
+  margin: 0 0 1px;
+  font-size: 11px;
+}
+.travel-place h1 {
+  font-size: clamp(17px, 1.7vw, 25px);
+  line-height: 1.15;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.travel-exit {
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 5px 5px 16px;
+}
+.route-distance {
+  height: 4px;
+  width: 58px;
+  background: var(--line);
+  flex: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.route-distance i {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+.travel-exit .secondary {
+  font-size: 13px;
+  min-height: 38px;
+  padding: 8px 16px;
+}
+.travel-help,
+.recenter-hands,
+.walk-buttons button {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid #cfc6b0;
+  background: #fffdf6;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1;
+}
+.travel-actions {
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.action-chip {
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #fffaf1;
+  background: #fffaf1d9;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 14px #1d2c2226;
+  font-size: 27px;
+  line-height: 1;
+  transition: transform 150ms ease;
+}
+.action-chip:hover:not(:disabled) {
+  transform: scale(1.08);
 }
 .action-chip[aria-pressed="true"] {
-  background: var(--ink);
-  color: #fffef7;
+  background: #f8c8d4;
   border-color: var(--ink);
 }
+.travel-steer {
+  left: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hand-steering,
+.walk-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 5px 5px 14px;
+  font-size: 13px;
+}
+.walk-buttons {
+  padding: 5px;
+}
+.walk-buttons button {
+  touch-action: none;
+  user-select: none;
+}
 @media (max-width: 650px) {
-  .travel-actions {
-    width: 100%;
+  /* A phone held upright keeps a near-square view, so the painted city is
+     not magnified past its detail; the walk sits centered on the page. */
+  .app:has(.exploration) {
+    height: auto;
   }
-  .travel-controls .action-chip {
-    flex: 1;
-    padding: 8px 6px;
+  .screen:has(> .exploration) {
+    align-content: center;
+  }
+  .exploration .world {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 10;
+    max-height: calc(100svh - 150px);
+  }
+  .travel-place {
+    top: 10px;
+    left: 10px;
+    max-width: calc(100% - 126px);
+    padding: 6px 12px 7px;
+  }
+  .travel-exit {
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+    padding: 5px;
+  }
+  .travel-exit .route-distance,
+  .exit-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .travel-exit .secondary {
+    width: 38px;
+    padding: 0;
+    font-size: 17px;
+  }
+  .travel-actions {
+    right: 10px;
+    gap: 8px;
+  }
+  .action-chip {
+    width: 46px;
+    height: 46px;
+    font-size: 23px;
+  }
+  .travel-steer {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+/* How to play the city walk, in the campaign's hand-drawn style. */
+.explore-intro {
+  width: min(900px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: clamp(22px, 3vw, 38px) clamp(20px, 3.5vw, 46px)
+    clamp(20px, 2.6vw, 30px);
+  border: 0;
+  border-radius: 26px;
+  background: #fdf7f3;
+  color: #1e1a1a;
+  text-align: center;
+  box-shadow: 0 20px 60px #1d2c2240;
+}
+.explore-intro[open] {
+  animation: next-destination 320ms ease-out both;
+}
+.explore-intro::backdrop {
+  background: #2437264d;
+  backdrop-filter: blur(3px);
+}
+.intro-title {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 0.25em 0.34em;
+  font-size: clamp(26px, 3.3vw, 42px);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M5 8Q100 1 195 7' stroke='%23f4c430' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")
+    center bottom / 88% 0.3em no-repeat;
+}
+.intro-title::before,
+.intro-title::after {
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  width: 0.95em;
+  height: 0.95em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cg stroke='%23f4c430' stroke-width='4.5' stroke-linecap='round'%3E%3Cpath d='M9 6l10 8M4 21h15M9 36l10-8'/%3E%3C/g%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+.intro-title::before {
+  right: 100%;
+}
+.intro-title::after {
+  left: 100%;
+  transform: scaleX(-1);
+}
+.intro-sub {
+  margin: 8px 0 18px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #5b5450;
+}
+.intro-body {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(16px, 2.6vw, 34px);
+  align-items: center;
+  text-align: left;
+}
+.intro-camera {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 22px;
+  background: linear-gradient(#d2cdc7, #bab5af);
+}
+.intro-camera video,
+.intro-camera > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intro-camera video {
+  transform: scaleX(-1);
+}
+.intro-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #fffaf1e6;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+.intro-badge svg {
+  width: 18px;
+}
+.intro-group {
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #6a625c;
+}
+.intro-moves ul {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+.intro-moves li {
+  display: grid;
+  grid-template-columns: 64px auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.intro-moves li > svg {
+  width: 64px;
+  height: auto;
+}
+.intro-pill {
+  justify-self: start;
+  padding: 3px 14px;
+  border-radius: 999px;
+  background: #f9c9d5;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+.intro-moves li:nth-child(even) .intro-pill {
+  background: #fde3ad;
+}
+.intro-moves small {
+  font-size: 12px;
+  color: #5b5450;
+}
+.intro-moves kbd {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #1e1a1a;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 2px 0 #1e1a1a;
+  font: 18px var(--display);
+}
+.intro-moves .intro-signs {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 0;
+}
+.intro-signs li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.intro-signs .intro-pill {
+  justify-self: auto;
+}
+.intro-sign {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.intro-start {
+  min-width: 170px;
+  min-height: 48px;
+  margin-top: clamp(14px, 2vw, 22px);
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 999px;
+  background: #f6b6c6;
+  box-shadow: 0 3px 0 #e48ea4;
+  color: #1e1a1a;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+}
+.intro-start:hover {
+  background: #f4a5b8;
+}
+.intro-pinch {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6a625c;
+}
+.intro-palm {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  width: clamp(60px, 8vw, 100px);
+  pointer-events: none;
+}
+@media (max-width: 700px) {
+  .intro-body {
+    grid-template-columns: 1fr;
+  }
+  .intro-camera {
+    aspect-ratio: 16 / 9;
+  }
+  .intro-palm {
+    display: none;
+  }
+  /* The rays sit inside the card when the title takes two lines. */
+  .intro-title {
+    font-size: clamp(20px, 6.2vw, 30px);
+    padding-inline: 1.15em;
+  }
+  .intro-title::before {
+    right: auto;
+    left: 0;
+  }
+  .intro-title::after {
+    left: auto;
+    right: 0;
   }
 }
 

@@ -1,5 +1,6 @@
 import { expect, it } from "vitest";
 import { FruitController, signedArc } from "../src/game/progress";
+import { preparedFruits, recipes } from "../src/game/catalog";
 import { projection, viewAt } from "../src/travel/movement";
 const point = { x: 0.3, y: 0.4 };
 it("requires deliberate angular movement and rejects jumps or a stationary fingertip", () => {
@@ -37,6 +38,26 @@ it("requires dropping prepared fruit into the lower target and releases on loss"
   expect(ctl.input({ type: "end", point: { x: 0.5, y: 0.8 } })).toBe(0);
   ctl.input({ type: "start", point });
   expect(ctl.input({ type: "end", point: { x: 0.5, y: 0.8 } })).toBe(1);
+});
+it("adds every fruit cut or peeled earlier, one drop each", () => {
+  const added = Object.values(recipes).map((r) =>
+    preparedFruits(
+      r.steps,
+      r.steps.findIndex((s) => s.mode === "transfer"),
+    ).map((f) => f.fruit + (f.peeled ? " peeled" : " cut")),
+  );
+  expect(added).toEqual([
+    ["guava cut", "lime cut"],
+    ["pineapple peeled", "lilikoi cut"],
+    ["prickly-pear peeled", "orange peeled"],
+  ]);
+  const ctl = new FruitController("transfer", 3);
+  const drop = () => {
+    ctl.input({ type: "start", point });
+    return ctl.input({ type: "end", point: { x: 0.5, y: 0.8 } });
+  };
+  expect([drop(), drop(), drop()]).toEqual([1 / 3, 1 / 3, 1 / 3]);
+  expect(ctl.input({ type: "accessible" })).toBeCloseTo(1 / 3);
 });
 it("peels as far as the finger pulls down and never re-attaches the skin", () => {
   const ctl = new FruitController("peel");

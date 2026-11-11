@@ -30,10 +30,12 @@ Continuous movement, frame timestamps and hand positions remain transient. Only 
 
 Permission is requested before any model download and only after activation of Enable Camera or Try Again. There is at most one active camera session and one inference frame in flight. Cancelling pending permission invalidates late results. A later grant for an abandoned request is immediately released. A real video frame plus completed inference verifies readiness even if no hand is visible yet.
 
-The worker receives a disposable bitmap, calls recognizeForVideo, returns up to two sets of landmarks and the primary pose confidence, and closes the bitmap. It has no upload or recording path. All production requests for game assets, fonts and model files go to the site origin. Sound output does not request microphone permission. Session storage and browser history never contain frames or landmarks.
+The worker receives a disposable bitmap, calls recognizeForVideo, returns up to two sets of landmarks and the primary pose confidence, and closes the bitmap. It has no upload or recording path. The city walk's how-to-play card shows the same live stream in a muted, mirrored video element on the page (CameraSession.preview returns it only while tracking is ready); nothing is captured from it. All production requests for game assets, fonts and model files go to the site origin. Sound output does not request microphone permission. Session storage and browser history never contain frames or landmarks.
 
 ## Rendering and publishing
 
 Vite serves the React shell. PixiJS loads when a visitor reaches the station or a city. The renderer follows the reducer and input references without sending frame data through React. Each scene releases texture leases when unmounted. GSAP handles the globe approach and page transitions. Reduced motion uses a small perspective change and a dissolve with a stationary traveler.
+
+Every word on the site uses one self-hosted face, Short Stack (via @fontsource), chosen to match the hand-drawn lettering of the campaign art; the selfie postcard canvas draws with it too. The city walk renders the world over the whole scene, with the place name, exit, steering meter and sign buttons as small overlays; on phones held upright the world keeps a near-square view so the painting is not over-magnified. The bowl step derives its count from the recipe: preparedFruits lists each fruit cut or peeled earlier, and each drop adds one of them.
 
 A bundled catalog supplies all content. The optional FastAPI contract in plan.md remains appropriate if a separate content publishing workflow is introduced. Current interactions have no network dependency beyond the site's static files.

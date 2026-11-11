@@ -68,6 +68,8 @@ for (const city of Object.keys(recipes) as City[]) {
     ).toBeVisible();
     if (city === "hawaii") await capture(page, "reveal");
     await page.getByRole("button", { name: /Explore Your Summer/ }).click();
+    if (city === "miami") await capture(page, "explore-intro");
+    await page.getByRole("button", { name: "Start", exact: true }).click();
     const world = page.locator(".world");
     await expect(world.locator("canvas")).toBeVisible();
     const box = (await world.boundingBox())!;

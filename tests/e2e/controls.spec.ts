@@ -18,6 +18,8 @@ async function checkpoint(page: Page, scene: string, step: number, stop = 0) {
   );
   await page.goto("/");
   await page.getByRole("button", { name: "Continue Without Camera" }).click();
+  if (scene === "explore")
+    await page.getByRole("button", { name: "Start", exact: true }).click();
 }
 test("pointer cutting, paused pouring, circular stirring and travel via keyboard", async ({
   page,
@@ -148,4 +150,35 @@ test("traveler actions from buttons and number keys, with a selfie postcard", as
   await expect(traveler).not.toHaveAttribute("data-activity", "selfie");
   await card.getByRole("button", { name: "Close postcard" }).click();
   await expect(card).toBeHidden();
+});
+
+test("the city walk opens with how to play, and the help button brings it back", async ({
+  page,
+}) => {
+  await checkpoint(page, "station", 6);
+  await page.getByRole("button", { name: "Stir one turn" }).click();
+  await page.getByRole("button", { name: "Stir one turn" }).click();
+  await page.getByRole("button", { name: /Explore Your Summer/ }).click();
+  const intro = page.getByRole("dialog", { name: "Use Your Body to Explore" });
+  await expect(intro).toBeVisible();
+  await expect(intro.getByText("Hold ↑ or drag up the path")).toBeVisible();
+  for (const label of ["Sit", "Sip", "Wave", "Selfie"])
+    await expect(intro.getByText(label, { exact: true })).toBeVisible();
+  // The walk waits behind the card.
+  await page.keyboard.down("ArrowUp");
+  await page.waitForTimeout(500);
+  await page.keyboard.up("ArrowUp");
+  expect(Number(await page.locator(".world").getAttribute("data-distance"))).toBe(0);
+  await intro.getByRole("button", { name: "Start", exact: true }).click();
+  await expect(intro).toBeHidden();
+  // Only the scene and small controls remain: no instructions under it.
+  const world = (await page.locator(".world").boundingBox())!,
+    scene = (await page.locator(".exploration").boundingBox())!;
+  expect(world.height).toBeGreaterThan(scene.height - 1);
+  expect(world.width).toBeGreaterThan(page.viewportSize()!.width * 0.95);
+  await expect(page.locator(".action-chip")).toHaveText(["✊", "👍", "🖐", "✌️"]);
+  await page.getByRole("button", { name: "How to explore" }).click();
+  await expect(intro).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(intro).toBeHidden();
 });

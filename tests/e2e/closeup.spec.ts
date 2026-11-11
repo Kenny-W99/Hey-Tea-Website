@@ -18,6 +18,7 @@ test("walks toward the tower entrance before changing landmarks and can back awa
   );
   await page.goto("/");
   await page.getByText("Continue Without Camera").click();
+  await page.getByRole("button", { name: "Start", exact: true }).click();
   const canvas = page.locator(".world canvas");
   await expect(canvas).toBeVisible();
   const originalCanvas = await canvas.elementHandle();

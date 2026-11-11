@@ -31,6 +31,21 @@ export interface Recipe {
   stops: Stop[];
   steps: Step[];
 }
+/**
+ * Every fruit cut or peeled before step `index`, once each and in order.
+ * The bowl step adds each of them, one drop per fruit.
+ */
+export function preparedFruits(steps: readonly Step[], index: number) {
+  const out: { fruit: string; peeled: boolean }[] = [];
+  for (const s of steps.slice(0, index))
+    if (
+      s.fruit &&
+      (s.mode === "split" || s.mode === "peel" || s.mode === "arc") &&
+      !out.some((f) => f.fruit === s.fruit)
+    )
+      out.push({ fruit: s.fruit, peeled: s.mode !== "split" });
+  return out;
+}
 const step = (
   mode: Mechanic,
   title: string,
@@ -48,8 +63,8 @@ function finish(tea: string): Step[] {
     step(
       "transfer",
       "Into the bowl",
-      "Drag the prepared fruit into the bowl.",
-      "Add the fruit",
+      "Drag each prepared fruit into the bowl.",
+      "Add a fruit",
     ),
     step(
       "mash",

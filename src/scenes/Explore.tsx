@@ -11,6 +11,7 @@ import { clamp } from "../game/progress";
 import type { Run, Action } from "../game/run";
 import { World } from "../travel/World";
 import { RouteFinish } from "../travel/RouteFinish";
+import { ExploreIntro } from "../travel/ExploreIntro";
 import { HandSteering, type WalkCue } from "../travel/push";
 import { viewAt } from "../travel/movement";
 
@@ -36,6 +37,8 @@ export function Explore({
   const camera = useCamera();
   const [cue, setCue] = useState<WalkCue>("find");
   const [endDismissed, setEndDismissed] = useState(false);
+  // How to play comes first on a fresh walk, and again from the help button.
+  const [intro, setIntro] = useState(() => run.distance === 0);
   const [arrivalComplete, setArrivalComplete] = useState(false);
   const completeArrival = useCallback(() => setArrivalComplete(true), []);
   const atEnd = run.distance === end,
@@ -80,7 +83,7 @@ export function Explore({
     setAction(next);
   }, []);
   useEffect(() => {
-    if (camera.status !== "ready" || arriving) return;
+    if (camera.status !== "ready" || arriving || intro) return;
     signs.current.reset();
     const offSteer = listenTravel((palms, now) => {
       if (palms.length === 2) signs.current.steering(now);
@@ -97,7 +100,7 @@ export function Explore({
       offSteer();
       offSign();
     };
-  }, [camera.status, arriving]);
+  }, [camera.status, arriving, intro]);
   useEffect(() => {
     if (arriving) setAction(null);
   }, [arriving]);
@@ -110,7 +113,7 @@ export function Explore({
   }, [atEnd]);
   useEffect(() => {
     recenter();
-    if (camera.status !== "ready" || arriving) return;
+    if (camera.status !== "ready" || arriving || intro) return;
     return listenTravel((palms, now, palmSize) => {
       const w = walk.current,
         axis = steering.current.sample(palms, now, palmSize);
@@ -125,7 +128,7 @@ export function Explore({
       w.handAxis = axis;
       w.handTime = now;
     });
-  }, [camera.status, arriving, recenter]);
+  }, [camera.status, arriving, intro, recenter]);
   useEffect(() => {
     const direction = (key: string) =>
       ["ArrowUp", "w", "W"].includes(key)
@@ -134,7 +137,7 @@ export function Explore({
           ? -1
           : 0;
     const down = (e: KeyboardEvent) => {
-      if (showFinish || e.altKey || e.ctrlKey || e.metaKey) return;
+      if (showFinish || intro || e.altKey || e.ctrlKey || e.metaKey) return;
       if (e.key === "Escape") {
         stopMotion();
         dispatch({ type: "leave" });
@@ -165,33 +168,19 @@ export function Explore({
       window.removeEventListener("blur", recenter);
       document.removeEventListener("visibilitychange", recenter);
     };
-  }, [showFinish, arriving, dispatch, stopMotion, recenter, act]);
+  }, [showFinish, intro, arriving, dispatch, stopMotion, recenter, act]);
   const resume = () => {
     setEndDismissed(true);
     recenter();
     exitButton.current?.focus();
   };
+  const begin = () => {
+    setIntro(false);
+    recenter();
+  };
+  const ready = camera.status === "ready";
   return (
     <main className="exploration scene">
-      <div className="travel-heading">
-        <div>
-          <p className="location">{recipe.place} · City walk</p>
-          <h1 tabIndex={-1}>{stop.name}</h1>
-        </div>
-        <div className="travel-exit">
-          <span>{recipe.name}</span>
-          <button
-            ref={exitButton}
-            className="secondary"
-            onClick={() => {
-              stopMotion();
-              dispatch({ type: "leave" });
-            }}
-          >
-            ← All destinations
-          </button>
-        </div>
-      </div>
       <World
         recipe={recipe}
         control={walk}
@@ -206,8 +195,13 @@ export function Explore({
           You made it! Cheers to your summer in {recipe.place}.
         </span>
       )}
-      <div className="travel-controls">
-        <div className="travel-instructions">
+      {/* The scene fills the screen; only small controls sit on top. */}
+      <div className="travel-hud">
+        <div className="travel-place">
+          <p className="location">{recipe.place} · City walk</p>
+          <h1 tabIndex={-1}>{stop.name}</h1>
+        </div>
+        <div className="travel-exit">
           <div
             className="route-distance"
             role="progressbar"
@@ -218,13 +212,57 @@ export function Explore({
           >
             <i style={{ width: (run.distance / end) * 100 + "%" }} />
           </div>
-          {camera.status === "ready" ? (
+          <button
+            className="travel-help"
+            aria-label="How to explore"
+            title="How to explore"
+            onClick={() => {
+              stopMotion();
+              setIntro(true);
+            }}
+          >
+            ?
+          </button>
+          <button
+            ref={exitButton}
+            className="secondary"
+            onClick={() => {
+              stopMotion();
+              dispatch({ type: "leave" });
+            }}
+          >
+            ← <span className="exit-label">All destinations</span>
+          </button>
+        </div>
+        <div
+          className="travel-actions"
+          role="group"
+          aria-label={
+            ready
+              ? "Traveler actions. Stop, then hold a sign with one hand."
+              : "Traveler actions"
+          }
+        >
+          {travelActions.map((a, i) => (
+            <button
+              key={a.id}
+              className="action-chip"
+              data-manual
+              disabled={arriving}
+              aria-label={a.label}
+              title={a.label + " · " + a.sign + " · key " + (i + 1)}
+              aria-pressed={action === a.id}
+              aria-keyshortcuts={String(i + 1)}
+              onClick={() => act(a.id)}
+            >
+              <span aria-hidden="true">{a.sign}</span>
+            </button>
+          ))}
+        </div>
+        <div className="travel-steer">
+          {ready ? (
             <div className="hand-steering" data-cue={cue}>
-              <div className="steering-labels">
-                <span>Back</span>
-                <strong role="status">{cueText[cue]}</strong>
-                <span>Forward</span>
-              </div>
+              <span aria-hidden="true">↓</span>
               <div
                 ref={meter}
                 className="steering-meter"
@@ -237,71 +275,48 @@ export function Explore({
                 <span className="steering-center" />
                 <i />
               </div>
-              <p>
-                Open a little to go forward. Bring hands closer to go back.
-                Return to center to stop. Then hold ✊ 👍 🖐 or ✌️ with one
-                hand.
-              </p>
-              <button className="recenter-hands" onClick={recenter}>
-                Recenter hands
+              <span aria-hidden="true">↑</span>
+              <strong className="sr-only" role="status">
+                {cueText[cue]}
+              </strong>
+              <button
+                className="recenter-hands"
+                aria-label="Recenter hands"
+                title="Recenter hands"
+                onClick={recenter}
+              >
+                ⟲
               </button>
             </div>
           ) : (
-            <p>
-              Hold ↑ or ↓ to walk, or drag along the path. Keys 1–4 pick an
-              action.
-            </p>
+            <div className="walk-buttons">
+              {([-1, 1] as const).map((d) => (
+                <button
+                  key={d}
+                  data-manual
+                  disabled={arriving}
+                  aria-label={d === 1 ? "Walk forward" : "Walk back"}
+                  title={d === 1 ? "Walk forward" : "Walk back"}
+                  onPointerDown={(e) => {
+                    if (e.button !== 0) return;
+                    e.currentTarget.setPointerCapture(e.pointerId);
+                    walk.current.direction = d;
+                  }}
+                  onLostPointerCapture={stopMotion}
+                  onClick={(e) => {
+                    if (e.detail === 0)
+                      walk.current.target = clamp(
+                        walk.current.target + d * 0.08,
+                        0,
+                        end,
+                      );
+                  }}
+                >
+                  {d === 1 ? "↑" : "↓"}
+                </button>
+              ))}
+            </div>
           )}
-        </div>
-        <div
-          className="travel-actions"
-          role="group"
-          aria-label={
-            camera.status === "ready"
-              ? "Traveler actions. Stop, then hold a sign with one hand."
-              : "Traveler actions"
-          }
-        >
-          {travelActions.map((a, i) => (
-            <button
-              key={a.id}
-              className="secondary action-chip"
-              data-manual
-              disabled={arriving}
-              aria-pressed={action === a.id}
-              aria-keyshortcuts={String(i + 1)}
-              onClick={() => act(a.id)}
-            >
-              <span aria-hidden="true">{a.sign}</span> {a.label}
-            </button>
-          ))}
-        </div>
-        <div className="walk-buttons">
-          {([-1, 1] as const).map((d) => (
-            <button
-              key={d}
-              className="secondary"
-              data-manual
-              disabled={arriving}
-              aria-label={d === 1 ? "Walk forward" : "Walk back"}
-              onPointerDown={(e) => {
-                if (e.button !== 0) return;
-                e.currentTarget.setPointerCapture(e.pointerId);
-                walk.current.direction = d;
-              }}
-              onLostPointerCapture={stopMotion}
-              onClick={(e) => {
-                if (e.detail === 0)
-                  walk.current.target = clamp(
-                    walk.current.target + d * 0.08,
-                    0,
-                    end,
-                  );
-              }}
-            >
-              {d === 1 ? "Forward ↑" : "↓ Back"}
-            </button>
-          ))}
           {atEnd && endDismissed && (
             <button className="primary" onClick={() => setEndDismissed(false)}>
               Choose what’s next ↗
@@ -309,10 +324,13 @@ export function Explore({
           )}
         </div>
       </div>
+      {intro && !arriving && (
+        <ExploreIntro recipe={recipe} cameraReady={ready} onStart={begin} />
+      )}
       {showFinish && (
         <RouteFinish
           recipe={recipe}
-          cameraReady={camera.status === "ready"}
+          cameraReady={ready}
           onLeave={() => dispatch({ type: "leave" })}
           onResume={resume}
           onFinish={() => dispatch({ type: "finish" })}

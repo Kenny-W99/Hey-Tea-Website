@@ -9,14 +9,15 @@ export const isPeel = (mode: Mechanic) => mode === "peel" || mode === "arc";
 // Downward travel, as a fraction of the input area, that peels the whole skin.
 export const peelReach = { pointer: 0.7, camera: 0.45 };
 
-export function actionCount(mode: Mechanic) {
+/** `fruits` is how many prepared fruits the bowl step adds, one at a time. */
+export function actionCount(mode: Mechanic, fruits = 1) {
   return (
     strokeCount(mode) ||
     (
       {
         squeeze: 2,
         scoop: 1,
-        transfer: 1,
+        transfer: fruits,
         mash: 3,
         stir: 2,
         pour: 0,
