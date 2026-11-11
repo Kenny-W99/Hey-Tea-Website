@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T06:12:00.572301+00:00",
+  "title": "HEYTEA Make Your Summer",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Green ink",
+        "tonalRamp": [
+          "#001108",
+          "#052b21",
+          "#274a3f",
+          "#45695d",
+          "#678d7f",
+          "#88aea1",
+          "#add5c6",
+          "#d1f9ea"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Leaf green",
+        "tonalRamp": [
+          "#001202",
+          "#002d17",
+          "#1f4d34",
+          "#3e6c52",
+          "#619074",
+          "#82b295",
+          "#a7d8ba",
+          "#cafdde"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green",
+        "tonalRamp": [
+          "#001008",
+          "#0f2a20",
+          "#2e493e",
+          "#4b685b",
+          "#6e8b7e",
+          "#8ead9f",
+          "#b4d3c5",
+          "#d7f7e9"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm paper",
+        "tonalRamp": [
+          "#0e0b06",
+          "#27241d",
+          "#46423b",
+          "#646058",
+          "#87837b",
+          "#a9a49c",
+          "#cfcac1",
+          "#f3eee5"
+        ]
+      },
+      "shell": {
+        "role": "neutral",
+        "displayName": "Sage surround",
+        "tonalRamp": [
+          "#090d03",
+          "#222619",
+          "#404537",
+          "#5e6354",
+          "#808676",
+          "#a2a797",
+          "#c7cdbd",
+          "#ebf1e0"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Sage divider",
+        "tonalRamp": [
+          "#060e01",
+          "#1e2814",
+          "#3c4731",
+          "#59654f",
+          "#7c8871",
+          "#9daa91",
+          "#c3d0b6",
+          "#e6f4da"
+        ]
+      },
+      "miami": {
+        "role": "tertiary",
+        "displayName": "Guava pink",
+        "tonalRamp": [
+          "#280002",
+          "#480316",
+          "#6d2833",
+          "#8f4650",
+          "#b66972",
+          "#db8a93",
+          "#ffb0b8",
+          "#ffd4db"
+        ]
+      },
+      "hawaii": {
+        "role": "tertiary",
+        "displayName": "Hawaii gold",
+        "tonalRamp": [
+          "#230000",
+          "#411600",
+          "#643700",
+          "#845700",
+          "#a97b00",
+          "#cd9d00",
+          "#f4c346",
+          "#ffe86e"
+        ]
+      },
+      "la": {
+        "role": "tertiary",
+        "displayName": "Desert peach",
+        "tonalRamp": [
+          "#290000",
+          "#4a0600",
+          "#6e2b00",
+          "#914b18",
+          "#b86e3f",
+          "#dc9060",
+          "#ffb685",
+          "#ffd9a8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "DM Serif Display",
+        "purpose": "Campaign and scene headings."
+      },
+      "instruction": {
+        "displayName": "DM Sans",
+        "purpose": "Instructions and status."
+      },
+      "campaign": {
+        "displayName": "Kalam",
+        "purpose": "Handwritten line on the entry poster."
+      }
+    },
+    "shadows": [
+      {
+        "name": "invitation",
+        "value": "0 12px 44px #12391b10",
+        "purpose": "Lift the entry poster off the sage surround."
+      }
+    ],
+    "motion": [
+      {
+        "name": "cup-preview",
+        "value": "transform 0.22s",
+        "purpose": "Lift and tip the desktop cup on hover or selection. Reduced motion disables the transform."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "650px"
+      },
+      {
+        "name": "tablet",
+        "value": "820px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Commits the selected recipe.",
+      "html": "<button type=\"button\" class=\"ds-button-primary\">Make this drink <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-button-primary{font-family:\"DM Sans\",sans-serif;min-height:46px;padding:12px 22px;font-size:16px;display:inline-flex;align-items:center;justify-content:center;gap:16px;font-weight:600;cursor:pointer;border-radius:30px;border:1px solid var(--ink, #173b30);background:var(--ink, #173b30);color:#fffef7;}.ds-button-primary:hover{background:var(--accent, #28563d);}.ds-button-primary:focus-visible{outline:3px solid #a9450e;outline-offset:4px;}.ds-button-primary:disabled{opacity:.72;cursor:wait;}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Direct-controls action on the camera invitation.",
+      "html": "<button type=\"button\" class=\"ds-button-secondary\">Continue Without Camera</button>",
+      "css": ".ds-button-secondary{font-family:\"DM Sans\",sans-serif;min-height:46px;padding:12px 22px;font-size:16px;display:inline-flex;align-items:center;justify-content:center;gap:16px;font-weight:600;cursor:pointer;border-radius:30px;border:1px solid #879c88;background:var(--paper, #fffaf1);color:var(--ink, #173b30);}.ds-button-secondary:hover{background:#ebefdf;}.ds-button-secondary:focus-visible{outline:3px solid #a9450e;outline-offset:4px;}.ds-button-secondary:disabled{opacity:.72;cursor:wait;}"
+    },
+    {
+      "name": "Camera switch",
+      "kind": "button",
+      "refersTo": "camera-switch",
+      "description": "Camera state and switch in the masthead.",
+      "html": "<button type=\"button\" class=\"ds-camera-switch\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><rect x=\"2\" y=\"5\" width=\"13\" height=\"14\" rx=\"4\"/><path d=\"m15 10 7-4v12l-7-4z\"/></svg>Camera off</button>",
+      "css": ".ds-camera-switch{font-family:\"DM Sans\",sans-serif;min-height:44px;padding:8px 16px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:16px;font-weight:600;cursor:pointer;border-radius:30px;border:1px solid #879c88;background:var(--paper, #fffaf1);color:var(--ink, #173b30);}.ds-camera-switch:hover{background:#ebefdf;}.ds-camera-switch:focus-visible{outline:3px solid #a9450e;outline-offset:4px;}.ds-camera-switch:disabled{opacity:.72;cursor:wait;}"
+    },
+    {
+      "name": "Selected phone destination",
+      "kind": "button",
+      "refersTo": "phone-choice",
+      "description": "A destination name above the drink name, with an outline and underline for its selected state.",
+      "html": "<button class=\"ds-phone-choice\" aria-pressed=\"true\"><span>Hawaii</span><small>Golden Aloha</small></button>",
+      "css": ".ds-phone-choice{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;padding:9px 3px;width:110px;border-radius:12px;border:0;background:transparent;color:var(--ink, #173b30);cursor:pointer;}.ds-phone-choice span{font:20px var(--display,\"DM Serif Display\",Georgia,serif);}.ds-phone-choice small{font:11px \"DM Sans\",sans-serif;}.ds-phone-choice[aria-pressed=\"true\"]{box-shadow:inset 0 0 0 2px var(--accent, #28563d);}.ds-phone-choice[aria-pressed=\"true\"] span{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;}.ds-phone-choice:focus-visible{outline:3px solid #a9450e;outline-offset:4px;}"
+    },
+    {
+      "name": "Recipe progress",
+      "kind": "custom",
+      "refersTo": "recipe-progress",
+      "description": "Segmented current step with separate text for completion within that step.",
+      "html": "<div class=\"ds-progress\"><div>Preparation <span>3 / 7</span></div><div aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>50% complete</p></div>",
+      "css": ".ds-progress{font-family:\"DM Sans\",sans-serif;max-width:310px;color:var(--ink, #173b30);font-size:14px;}.ds-progress>div{display:flex;justify-content:space-between;gap:5px;}.ds-progress i{flex:1;height:5px;margin-top:8px;border-radius:2px;background:#dae0ce;}.ds-progress i:nth-child(-n+3){background:var(--accent, #28563d);}.ds-progress p{color:var(--muted,#415d51);margin:12px 0 25px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Make Your Summer",
+    "overview": "The three destination cups are the visitor’s map. Each sleeve identifies a drink at selection, travels in the mascot’s hand and appears again on the final postcard.\n\nThe working area pairs photographic fruit and an outlined white mascot with a quiet, warm-paper surface. Color and detail increase when the finished drink opens a city.",
+    "keyCharacteristics": [
+      "Destination-specific cup sleeves",
+      "Photographic ingredients and illustrated helper poses",
+      "Serif headlines beside plain-language controls"
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep the recipe name, printed sleeve and illustrated place together.",
+      "Do keep action text on a readable surface and preserve the visible keyboard focus ring."
+    ],
+    "donts": [
+      "Don't mirror lettering on a cup when reversing a travel pose.",
+      "Don't use the shaker illustration for the circular stirring action."
+    ]
+  }
+}

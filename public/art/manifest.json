@@ -1,0 +1,2958 @@
+[
+  {
+    "path": "/art/globe-day.webp",
+    "source": "p05-01.png",
+    "page": 5,
+    "originalSize": [
+      1774,
+      887
+    ],
+    "size": [
+      1550,
+      775
+    ],
+    "purpose": "Globe illustration",
+    "processing": "Native 2:1 composition",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/globe-sunset.webp",
+    "source": "p05-02.png",
+    "page": 5,
+    "originalSize": [
+      1774,
+      887
+    ],
+    "size": [
+      1550,
+      775
+    ],
+    "purpose": "Globe illustration",
+    "processing": "Native 2:1 composition",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/cup.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      287,
+      476
+    ],
+    "purpose": "Campaign cup, cup",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/cup-back.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      287,
+      476
+    ],
+    "purpose": "Campaign cup, cup-back",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/cup.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      286,
+      476
+    ],
+    "purpose": "Campaign cup, cup",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/cup-back.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      286,
+      476
+    ],
+    "purpose": "Campaign cup, cup-back",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/cup.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      286,
+      476
+    ],
+    "purpose": "Campaign cup, cup",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/cup-back.webp",
+    "source": "p02-01.png",
+    "page": 2,
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      286,
+      476
+    ],
+    "purpose": "Campaign cup, cup-back",
+    "processing": "Manually traced lid and printed sleeve. Native hero crop.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/wordmark.webp",
+    "source": "p07-01.png",
+    "page": 7,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      342,
+      73
+    ],
+    "purpose": "HEYTEA wordmark and drinking figure",
+    "processing": "Isolated dark ink at original board scale",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/vignette.webp",
+    "source": "p07-01.png",
+    "page": 7,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      378,
+      262
+    ],
+    "purpose": "Illustrated destination vignette",
+    "processing": "Isolated colored campaign drawing and lifted ground",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/vignette.webp",
+    "source": "p07-01.png",
+    "page": 7,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      379,
+      252
+    ],
+    "purpose": "Illustrated destination vignette",
+    "processing": "Isolated colored campaign drawing and lifted ground",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/vignette.webp",
+    "source": "p07-01.png",
+    "page": 7,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      375,
+      266
+    ],
+    "purpose": "Illustrated destination vignette",
+    "processing": "Isolated colored campaign drawing and lifted ground",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/guava-0.webp",
+    "source": "p11-02.png",
+    "page": 11,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/guava-1.webp",
+    "source": "p11-03.png",
+    "page": 11,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/guava-2.webp",
+    "source": "p11-01.png",
+    "page": 11,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lime-0.webp",
+    "source": "p12-04.png",
+    "page": 12,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lime-1.webp",
+    "source": "p12-03.png",
+    "page": 12,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lime-2.webp",
+    "source": "p12-02.png",
+    "page": 12,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-0.webp",
+    "source": "p14-01.png",
+    "page": 14,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-1.webp",
+    "source": "p14-02.png",
+    "page": 14,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-2.webp",
+    "source": "p14-03.png",
+    "page": 14,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lilikoi-0.webp",
+    "source": "p15-03.png",
+    "page": 15,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lilikoi-1.webp",
+    "source": "p15-02.png",
+    "page": 15,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/lilikoi-2.webp",
+    "source": "p15-01.png",
+    "page": 15,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/orange-0.webp",
+    "source": "p17-02.png",
+    "page": 17,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/orange-1.webp",
+    "source": "p17-03.png",
+    "page": 17,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/orange-2.webp",
+    "source": "p17-04.png",
+    "page": 17,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-0.webp",
+    "source": "p16-03.png",
+    "page": 16,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-1.webp",
+    "source": "p16-02.png",
+    "page": 16,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-2.webp",
+    "source": "p16-04.png",
+    "page": 16,
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Fruit preparation state",
+    "processing": "Preserve registered square framing and original PDF soft mask",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/mash.webp",
+    "source": "p13-01.png",
+    "page": 13,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      525,
+      515
+    ],
+    "purpose": "Station helper with mash implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/pour.webp",
+    "source": "p13-01.png",
+    "page": 13,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      640,
+      521
+    ],
+    "purpose": "Station helper with pour implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/mix.webp",
+    "source": "p13-01.png",
+    "page": 13,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      406,
+      496
+    ],
+    "purpose": "Station helper with mix implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/mash.webp",
+    "source": "p15-05.png",
+    "page": 15,
+    "originalSize": [
+      2048,
+      709
+    ],
+    "size": [
+      492,
+      543
+    ],
+    "purpose": "Station helper with mash implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/pour.webp",
+    "source": "p15-05.png",
+    "page": 15,
+    "originalSize": [
+      2048,
+      709
+    ],
+    "size": [
+      640,
+      555
+    ],
+    "purpose": "Station helper with pour implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/mix.webp",
+    "source": "p15-05.png",
+    "page": 15,
+    "originalSize": [
+      2048,
+      709
+    ],
+    "size": [
+      401,
+      560
+    ],
+    "purpose": "Station helper with mix implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/mash.webp",
+    "source": "p18-01.png",
+    "page": 18,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      475,
+      538
+    ],
+    "purpose": "Station helper with mash implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/pour.webp",
+    "source": "p18-01.png",
+    "page": 18,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      640,
+      543
+    ],
+    "purpose": "Station helper with pour implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/mix.webp",
+    "source": "p18-01.png",
+    "page": 18,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      414,
+      514
+    ],
+    "purpose": "Station helper with mix implement",
+    "processing": "Isolated native transparent pose from preparation strip",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/poster-beach.webp",
+    "source": "p06-02.png",
+    "page": 6,
+    "originalSize": [
+      1086,
+      1448
+    ],
+    "size": [
+      1086,
+      418
+    ],
+    "purpose": "Branded illustrated beach footer from outdoor poster",
+    "processing": "Removed exterior sky ground, preserved interior ink and cups",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/sip-mascot.webp",
+    "source": "p07-01.png",
+    "page": 7,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      168,
+      151
+    ],
+    "purpose": "Cup-holding mascot bust",
+    "processing": "Hand-traced native outline",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-pose.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-0.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "City walking pose",
+    "processing": "Traveling mascot silhouette with original bag and drink; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-1.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-2.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-3.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-4.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-5.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-scene.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-back.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-mid.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-front.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/0-still.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-pose.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      184,
+      224
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-scene.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-back.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-mid.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-front.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/1-still.webp",
+    "source": "p20-02.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-pose.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      141,
+      197
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-scene.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-back.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-mid.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-front.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/2-still.webp",
+    "source": "p21-01.jpg",
+    "page": 21,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-pose.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      162,
+      221
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-scene.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      1440,
+      811
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-back.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      1440,
+      811
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-mid.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      1440,
+      811
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-front.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      1440,
+      811
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/3-still.webp",
+    "source": "p21-02.png",
+    "page": 21,
+    "originalSize": [
+      1671,
+      941
+    ],
+    "size": [
+      1440,
+      811
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-pose.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      171,
+      243
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-scene.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      1365,
+      768
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-back.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      1365,
+      768
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-mid.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      1365,
+      768
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-front.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      1365,
+      768
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/0-still.webp",
+    "source": "p22-01.jpg",
+    "page": 22,
+    "originalSize": [
+      1365,
+      768
+    ],
+    "size": [
+      1365,
+      768
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-pose.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      149,
+      261
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-scene.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-back.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-mid.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-front.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/1-still.webp",
+    "source": "p22-02.png",
+    "page": 22,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-pose.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-0.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "City walking pose",
+    "processing": "Traveling mascot silhouette with original bag and drink; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-1.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-2.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-3.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-4.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-5.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-scene.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-back.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-mid.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-front.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/2-still.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-pose.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      131,
+      247
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-scene.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-back.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-mid.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-front.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/3-still.webp",
+    "source": "p23-02.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      1440,
+      810
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-pose.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      196,
+      249
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-scene.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      1376,
+      768
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-back.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      1376,
+      768
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-mid.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      1376,
+      768
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-front.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      1376,
+      768
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/0-still.webp",
+    "source": "p24-01.jpg",
+    "page": 24,
+    "originalSize": [
+      1376,
+      768
+    ],
+    "size": [
+      1376,
+      768
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-pose.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      238,
+      284
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-scene.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-back.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-mid.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-front.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/1-still.webp",
+    "source": "p24-02.jpg",
+    "page": 24,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-pose.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      202,
+      265
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-scene.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-back.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-mid.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-front.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/2-still.webp",
+    "source": "p25-01.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-pose.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Landmark-specific pose",
+    "processing": "Manually traced local outline with GrabCut boundary refinement; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-0.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "City walking pose",
+    "processing": "Traveling mascot silhouette with original bag and drink; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-1.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-2.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-3.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-4.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-5.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Two independently displaced lower limbs with planted contact and alternating lift; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-scene.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Character-free destination vista",
+    "processing": "Removed the mascot and synthesized concealed pixels from nearby same-elevation scene textures",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-back.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment back",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-mid.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment mid",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-front.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment front",
+    "processing": "Removed baked mascot, filled with adjacent source textures, partitioned depth planes with edge bleed",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/3-still.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      1440,
+      804
+    ],
+    "purpose": "Environment still",
+    "processing": "Recomposed plate with recipe-corrected landmark mascot",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/pitcher.webp",
+    "source": "p13-01.png",
+    "page": 13,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      640,
+      521
+    ],
+    "purpose": "Interactive pouring figure",
+    "processing": "Masked original full bowl and frozen stream. Gameplay supplies liquid level and active stream.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/pitcher.webp",
+    "source": "p15-05.png",
+    "page": 15,
+    "originalSize": [
+      2048,
+      709
+    ],
+    "size": [
+      640,
+      555
+    ],
+    "purpose": "Interactive pouring figure",
+    "processing": "Masked original full bowl and frozen stream. Gameplay supplies liquid level and active stream.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/pitcher.webp",
+    "source": "p18-01.png",
+    "page": 18,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      640,
+      543
+    ],
+    "purpose": "Interactive pouring figure",
+    "processing": "Masked original full bowl and frozen stream. Gameplay supplies liquid level and active stream.",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-0.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-1.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-2.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-3.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-4.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/miami/walk-left-5.webp",
+    "source": "p20-01.png",
+    "page": 20,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      163,
+      222
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-0.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-1.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-2.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-3.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-4.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/hawaii/walk-left-5.webp",
+    "source": "p23-01.png",
+    "page": 23,
+    "originalSize": [
+      1672,
+      941
+    ],
+    "size": [
+      175,
+      248
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-0.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-1.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-2.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-3.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-4.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/la/walk-left-5.webp",
+    "source": "p25-02.jpg",
+    "page": 25,
+    "originalSize": [
+      2048,
+      1143
+    ],
+    "size": [
+      183,
+      258
+    ],
+    "purpose": "Walking frame",
+    "processing": "Mirrored body with original, readable recipe sleeve at reflected hand socket; selected sleeve retained or composited at hand",
+    "optimization": "WebP quality 88 with alpha where applicable",
+    "qualityStatus": "Visual review"
+  },
+  {
+    "path": "/art/fruit/helper-transfer.webp",
+    "source": "p12-01.png",
+    "page": 12,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      199,
+      266
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source crop; exterior matte follows the existing dark outline",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/helper-squeeze.webp",
+    "source": "p12-05.png",
+    "page": 12,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      291,
+      290
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source crop; exterior matte follows the existing dark outline",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/scoop-scene.webp",
+    "source": "p15-04.png",
+    "page": 15,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      411,
+      553
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-helper-0.webp",
+    "source": "p14-04.png",
+    "page": 14,
+    "originalSize": [
+      2048,
+      684
+    ],
+    "size": [
+      449,
+      600
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-helper-1.webp",
+    "source": "p14-04.png",
+    "page": 14,
+    "originalSize": [
+      2048,
+      684
+    ],
+    "size": [
+      558,
+      458
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-helper-2.webp",
+    "source": "p14-04.png",
+    "page": 14,
+    "originalSize": [
+      2048,
+      684
+    ],
+    "size": [
+      528,
+      457
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-helper-0.webp",
+    "source": "p17-01.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      472,
+      578
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-helper-1.webp",
+    "source": "p17-01.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      477,
+      588
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-helper-2.webp",
+    "source": "p17-01.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      511,
+      569
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/orange-helper-0.webp",
+    "source": "p17-05.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      539,
+      513
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/orange-helper-1.webp",
+    "source": "p17-05.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      575,
+      541
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/orange-helper-2.webp",
+    "source": "p17-05.png",
+    "page": 17,
+    "originalSize": [
+      2048,
+      683
+    ],
+    "size": [
+      638,
+      518
+    ],
+    "purpose": "Original campaign preparation helper",
+    "processing": "Source action vignette; connected exterior matte",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/peel-pull.webp",
+    "source": "p17-05.png",
+    "page": 17,
+    "size": [
+      164,
+      223
+    ],
+    "purpose": "Peeling helper pose",
+    "processing": "Source crop, closed mascot silhouette, foot outline completed",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/peel-cheer.webp",
+    "source": "p17-05.png",
+    "page": 17,
+    "size": [
+      182,
+      238
+    ],
+    "purpose": "Peeling helper pose",
+    "processing": "Source crop, closed mascot silhouette, foot outline completed",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-peel-skin.webp",
+    "source": "p14 via pineapple-0.webp",
+    "page": 14,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-peel-flesh.webp",
+    "source": "p14 via pineapple-2.webp",
+    "page": 14,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/pineapple-peel-crown.webp",
+    "source": "p14 via pineapple-0.webp",
+    "page": 14,
+    "size": [
+      296,
+      318
+    ],
+    "purpose": "Pineapple crown, lifted before peeling",
+    "processing": "Green leaves separated from the whole fruit photo",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-peel-skin.webp",
+    "source": "p16 via prickly-pear-0.webp",
+    "page": 16,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/prickly-pear-peel-flesh.webp",
+    "source": "p16 via prickly-pear-2.webp",
+    "page": 16,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/orange-peel-skin.webp",
+    "source": "p17 via orange-0.webp",
+    "page": 17,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  },
+  {
+    "path": "/art/fruit/orange-peel-flesh.webp",
+    "source": "p17 via orange-2.webp",
+    "page": 17,
+    "size": [
+      640,
+      640
+    ],
+    "purpose": "Progressive peeling layer",
+    "processing": "Registered whole and peeled photos on one canvas",
+    "optimization": "WebP with alpha",
+    "qualityStatus": "Browser visual review"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "miami": [
+    {
+      "stop": 0,
+      "footX": 0.25312,
+      "footY": 0.91975,
+      "poseWidth": 0.11319,
+      "poseHeight": 0.27407,
+      "aspect": 1.77778
+    },
+    {
+      "stop": 1,
+      "footX": 0.21528,
+      "footY": 0.80864,
+      "poseWidth": 0.12778,
+      "poseHeight": 0.27654,
+      "aspect": 1.77778
+    },
+    {
+      "stop": 2,
+      "footX": 0.23646,
+      "footY": 0.85945,
+      "poseWidth": 0.09792,
+      "poseHeight": 0.24502,
+      "aspect": 1.79104
+    },
+    {
+      "stop": 3,
+      "footX": 0.25764,
+      "footY": 0.91492,
+      "poseWidth": 0.1125,
+      "poseHeight": 0.2725,
+      "aspect": 1.77559
+    }
+  ],
+  "hawaii": [
+    {
+      "stop": 0,
+      "footX": 0.21722,
+      "footY": 0.86198,
+      "poseWidth": 0.12527,
+      "poseHeight": 0.31641,
+      "aspect": 1.77734
+    },
+    {
+      "stop": 1,
+      "footX": 0.35104,
+      "footY": 0.83827,
+      "poseWidth": 0.10347,
+      "poseHeight": 0.32222,
+      "aspect": 1.77778
+    },
+    {
+      "stop": 2,
+      "footX": 0.25243,
+      "footY": 0.88519,
+      "poseWidth": 0.12153,
+      "poseHeight": 0.30617,
+      "aspect": 1.77778
+    },
+    {
+      "stop": 3,
+      "footX": 0.26701,
+      "footY": 0.92469,
+      "poseWidth": 0.09097,
+      "poseHeight": 0.30494,
+      "aspect": 1.77778
+    }
+  ],
+  "la": [
+    {
+      "stop": 0,
+      "footX": 0.25218,
+      "footY": 0.90495,
+      "poseWidth": 0.14244,
+      "poseHeight": 0.32422,
+      "aspect": 1.79167
+    },
+    {
+      "stop": 1,
+      "footX": 0.275,
+      "footY": 0.93159,
+      "poseWidth": 0.16528,
+      "poseHeight": 0.35323,
+      "aspect": 1.79104
+    },
+    {
+      "stop": 2,
+      "footX": 0.2625,
+      "footY": 0.91418,
+      "poseWidth": 0.14028,
+      "poseHeight": 0.3296,
+      "aspect": 1.79104
+    },
+    {
+      "stop": 3,
+      "footX": 0.25451,
+      "footY": 0.90174,
+      "poseWidth": 0.12708,
+      "poseHeight": 0.3209,
+      "aspect": 1.79104
+    }
+  ]
+}
