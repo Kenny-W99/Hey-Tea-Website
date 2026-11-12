@@ -11,7 +11,7 @@ function Hand({ x, flip = false }: { x: number; flip?: boolean }) {
         "translate(" + x + " 6)" + (flip ? " translate(38 0) scale(-1 1)" : "")
       }
       fill="#fff"
-      stroke="#1e1a1a"
+      stroke="var(--ink)"
       strokeWidth="2"
       strokeLinejoin="round"
     >
@@ -81,7 +81,7 @@ function Palm() {
     <svg className="intro-palm" viewBox="0 0 120 120" aria-hidden="true">
       <g
         fill="none"
-        stroke="#1e1a1a"
+        stroke="var(--ink)"
         strokeWidth="2.2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -243,7 +243,12 @@ export function ExploreIntro({
           </ul>
         </div>
       </div>
-      <button className="intro-start" onClick={onStart} autoFocus>
+      <button
+        className="intro-start"
+        onClick={onStart}
+        data-gesture-pad="72"
+        autoFocus
+      >
         Start
       </button>
       {cameraReady && (
